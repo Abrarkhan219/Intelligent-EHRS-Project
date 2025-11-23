@@ -5,7 +5,3 @@ venv/
 models/
 models/*
 *.ipynb_checkpoints
-*.log
-.idea/
-.vscode/
-.DS_Store
