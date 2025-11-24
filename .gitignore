@@ -5,3 +5,4 @@ venv/
 models/
 models/*
 *.ipynb_checkpoints
+app/logs/answers.log
