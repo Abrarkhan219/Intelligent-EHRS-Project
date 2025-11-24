@@ -19,3 +19,4 @@ streamlit
 requests
 transformers
 torch
+serpapi
