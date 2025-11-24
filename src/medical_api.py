@@ -35,7 +35,7 @@ def get_google_answer(query):
     # Initialize parameters for the API
     params = {
         "q": query,  # The query to search
-        "api_key": "bf58b36e1dd63d9579ab9869ce2a564234dcec4d0c6595f349553ff1e98333f7",  # Replace with your actual SerpAPI key
+        "api_key": "66f2ae2e110659e4645da6463cf8bb92c76794caabfbaaa813be45096c9a8cd8",  # Replace with your actual SerpAPI key
         "engine": "google",  # Using Google search engine from SerpAPI
     }
 
