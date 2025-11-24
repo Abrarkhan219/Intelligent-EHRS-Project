@@ -8,13 +8,7 @@ import streamlit as st
 import time
 from src.medical_api import get_gmeplus_data, recommend_medicine, find_nearby_store
 from src.rag import retrieve_top_k, generate_answer
-# Attempt to import Google Search API function; provide a graceful fallback if the module is missing.
-try:
-    from src.medical_api import get_google_answer  # Importing the Google Search API function
-except Exception:
-    # Fallback function used when src.serp_api can't be imported.
-    def get_google_answer(query):
-        return "⚠️ Google Search API not available in this environment. Please install or provide src/serp_api.py to enable API-based search."
+from src.serp_api import get_google_answer  # Importing the Google Search API function from src/serp_api.py
 
 # ------------------- Streamlit Page Config -------------------
 st.set_page_config(

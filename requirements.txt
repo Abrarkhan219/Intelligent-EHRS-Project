@@ -1,3 +1,4 @@
+# Data Science and Machine Learning Libraries
 pandas
 numpy
 scikit-learn
@@ -5,18 +6,22 @@ matplotlib
 seaborn
 jupyter
 sentence-transformers
-transformers
 torch
 faiss-cpu
-langchain
 tqdm
-streamlit
-flask
 textdistance
+
+# Streamlit for Web App
+streamlit
+
+# Hugging Face Transformers
+transformers
+
+# SerpAPI for Google Search
 serpapi==0.1.5
 
-gradio
-streamlit
+# Other Dependencies
+flask
 requests
-transformers
-torch
+gradio
+langchain

@@ -1,6 +1,7 @@
 # src/medical_api.py
 
-from serpapi.serp_api_client import GoogleSearch
+# Import the get_google_answer function from serp_api.py
+from src.serp_api import get_google_answer
 
 # Function to recommend medicine based on the query
 def recommend_medicine(query):
@@ -31,21 +32,5 @@ def get_gmeplus_data(query):
     return f"Medical data for {query} retrieved successfully."
 
 # Function to get Google Search results using SerpAPI
-def get_google_answer(query):
-    # Initialize parameters for the API
-    params = {
-        "q": query,  # The query to search
-        "api_key": "66f2ae2e110659e4645da6463cf8bb92c76794caabfbaaa813be45096c9a8cd8",  # Replace with your actual SerpAPI key
-        "engine": "google",  # Using Google search engine from SerpAPI
-    }
-
-    # Call SerpAPI to get Google search results
-    search = GoogleSearch(params)
-    results = search.get_dict()
-
-    try:
-        # Extract the snippet from the organic results
-        snippet = results["organic_results"][0]["snippet"]
-        return f"📘 Google Search Result:\n\n{snippet}"
-    except KeyError:
-        return "⚠️ No relevant information found in search."
+def get_api_answer(query):
+    return get_google_answer(query)  # Calls the function from serp_api.py to get Google search result
