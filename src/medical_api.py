@@ -1,6 +1,6 @@
 # src/medical_api.py
 
-from serpapi import GoogleSearch
+from serpapi.serp_api_client import GoogleSearch
 
 # Function to recommend medicine based on the query
 def recommend_medicine(query):
